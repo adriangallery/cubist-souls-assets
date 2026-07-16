@@ -1,0 +1,833 @@
+{
+  "collection": "Cubist Souls",
+  "note": "Trait layers recovered by variance-differencing the 10000 flattened Pikkazo images. See README.md 'Trait library' and layers/QA.md.",
+  "canvas": {
+    "width": 768,
+    "height": 768
+  },
+  "zOrder": [
+    "art-background",
+    "base",
+    "clothes",
+    "mouth",
+    "nose",
+    "left-eye",
+    "right-eye",
+    "head"
+  ],
+  "zOrderLabels": [
+    "Art Background",
+    "Base",
+    "Clothes",
+    "Mouth",
+    "Nose",
+    "Left Eye",
+    "Right Eye",
+    "Head"
+  ],
+  "categories": [
+    {
+      "id": "art-background",
+      "label": "Art Background",
+      "dir": "layers/art-background",
+      "options": [
+        {
+          "file": "color-block.png",
+          "label": "Color Block",
+          "count": 669
+        },
+        {
+          "file": "emerald-tiles.png",
+          "label": "Emerald Tiles",
+          "count": 658
+        },
+        {
+          "file": "leaf-tiles.png",
+          "label": "Leaf Tiles",
+          "count": 645
+        },
+        {
+          "file": "snow-tiles.png",
+          "label": "Snow Tiles",
+          "count": 720
+        },
+        {
+          "file": "star-blue.png",
+          "label": "Star Blue",
+          "count": 706
+        },
+        {
+          "file": "star-brown.png",
+          "label": "Star Brown",
+          "count": 688
+        },
+        {
+          "file": "star-emerald.png",
+          "label": "Star Emerald",
+          "count": 679
+        },
+        {
+          "file": "star-green.png",
+          "label": "Star Green",
+          "count": 664
+        },
+        {
+          "file": "star-neon.png",
+          "label": "Star Neon",
+          "count": 639
+        },
+        {
+          "file": "star-orange.png",
+          "label": "Star Orange",
+          "count": 653
+        },
+        {
+          "file": "star-pink.png",
+          "label": "Star Pink",
+          "count": 673
+        },
+        {
+          "file": "star-purple.png",
+          "label": "Star Purple",
+          "count": 625
+        },
+        {
+          "file": "star-red.png",
+          "label": "Star Red",
+          "count": 682
+        },
+        {
+          "file": "star-snow.png",
+          "label": "Star Snow",
+          "count": 627
+        },
+        {
+          "file": "star-white.png",
+          "label": "Star White",
+          "count": 668
+        }
+      ]
+    },
+    {
+      "id": "base",
+      "label": "Base",
+      "dir": "layers/base",
+      "options": [
+        {
+          "file": "ancient-tribe.png",
+          "label": "Ancient Tribe",
+          "count": 456
+        },
+        {
+          "file": "as-a-human.png",
+          "label": "As a Human",
+          "count": 540
+        },
+        {
+          "file": "childs-play.png",
+          "label": "Childs Play",
+          "count": 484
+        },
+        {
+          "file": "dark-night.png",
+          "label": "Dark Night",
+          "count": 499
+        },
+        {
+          "file": "emerald-shine.png",
+          "label": "Emerald Shine",
+          "count": 503
+        },
+        {
+          "file": "geometry-dash.png",
+          "label": "Geometry Dash",
+          "count": 523
+        },
+        {
+          "file": "glow-stone.png",
+          "label": "Glow Stone",
+          "count": 437
+        },
+        {
+          "file": "grassland.png",
+          "label": "Grassland",
+          "count": 513
+        },
+        {
+          "file": "heatwave.png",
+          "label": "Heatwave",
+          "count": 501
+        },
+        {
+          "file": "impression-sunrise.png",
+          "label": "Impression Sunrise",
+          "count": 528
+        },
+        {
+          "file": "ocean-eyes.png",
+          "label": "Ocean Eyes",
+          "count": 520
+        },
+        {
+          "file": "playground.png",
+          "label": "Playground",
+          "count": 509
+        },
+        {
+          "file": "snowy-weather.png",
+          "label": "Snowy Weather",
+          "count": 497
+        },
+        {
+          "file": "soft-cloud.png",
+          "label": "Soft Cloud",
+          "count": 526
+        },
+        {
+          "file": "star-gazer.png",
+          "label": "Star Gazer",
+          "count": 505
+        },
+        {
+          "file": "star-struck.png",
+          "label": "Star Struck",
+          "count": 486
+        },
+        {
+          "file": "sun-burn.png",
+          "label": "Sun Burn",
+          "count": 493
+        },
+        {
+          "file": "sunset-point.png",
+          "label": "Sunset Point",
+          "count": 482
+        },
+        {
+          "file": "the-scream.png",
+          "label": "The Scream",
+          "count": 475
+        },
+        {
+          "file": "time-leap.png",
+          "label": "Time Leap",
+          "count": 519
+        }
+      ]
+    },
+    {
+      "id": "clothes",
+      "label": "Clothes",
+      "dir": "layers/clothes",
+      "options": [
+        {
+          "file": "black-hoodie.png",
+          "label": "Black Hoodie",
+          "count": 672
+        },
+        {
+          "file": "detective-noir.png",
+          "label": "Detective Noir",
+          "count": 683
+        },
+        {
+          "file": "emerald-butler.png",
+          "label": "Emerald Butler",
+          "count": 657
+        },
+        {
+          "file": "fiery-suit.png",
+          "label": "Fiery Suit",
+          "count": 681
+        },
+        {
+          "file": "greek-gods.png",
+          "label": "Greek Gods",
+          "count": 663
+        },
+        {
+          "file": "high-noble.png",
+          "label": "High Noble",
+          "count": 678
+        },
+        {
+          "file": "painter-work.png",
+          "label": "Painter Work",
+          "count": 662
+        },
+        {
+          "file": "polo-spike.png",
+          "label": "Polo Spike",
+          "count": 602
+        },
+        {
+          "file": "red-scarf.png",
+          "label": "Red Scarf",
+          "count": 655
+        },
+        {
+          "file": "shabby-suit.png",
+          "label": "Shabby Suit",
+          "count": 680
+        },
+        {
+          "file": "shabby-vest.png",
+          "label": "Shabby Vest",
+          "count": 671
+        },
+        {
+          "file": "spider-vest.png",
+          "label": "Spider Vest",
+          "count": 681
+        },
+        {
+          "file": "tartan-flanel.png",
+          "label": "Tartan Flanel",
+          "count": 672
+        },
+        {
+          "file": "tribe-vest.png",
+          "label": "Tribe Vest",
+          "count": 685
+        },
+        {
+          "file": "white-hoodie.png",
+          "label": "White Hoodie",
+          "count": 654
+        }
+      ]
+    },
+    {
+      "id": "mouth",
+      "label": "Mouth",
+      "dir": "layers/mouth",
+      "options": [
+        {
+          "file": "amphibious.png",
+          "label": "Amphibious",
+          "count": 501
+        },
+        {
+          "file": "artistic.png",
+          "label": "Artistic",
+          "count": 436
+        },
+        {
+          "file": "checkered.png",
+          "label": "Checkered",
+          "count": 484
+        },
+        {
+          "file": "clown-surprise.png",
+          "label": "Clown Surprise",
+          "count": 479
+        },
+        {
+          "file": "coward.png",
+          "label": "Coward",
+          "count": 477
+        },
+        {
+          "file": "diva.png",
+          "label": "Diva",
+          "count": 513
+        },
+        {
+          "file": "dress-to-kill.png",
+          "label": "Dress to Kill",
+          "count": 427
+        },
+        {
+          "file": "gentleman.png",
+          "label": "Gentleman",
+          "count": 514
+        },
+        {
+          "file": "lipstain.png",
+          "label": "Lipstain",
+          "count": 531
+        },
+        {
+          "file": "need-water.png",
+          "label": "Need Water",
+          "count": 517
+        },
+        {
+          "file": "nervous.png",
+          "label": "Nervous",
+          "count": 510
+        },
+        {
+          "file": "not-speak.png",
+          "label": "Not Speak",
+          "count": 530
+        },
+        {
+          "file": "rainbow-grill.png",
+          "label": "Rainbow Grill",
+          "count": 524
+        },
+        {
+          "file": "scaredy.png",
+          "label": "Scaredy",
+          "count": 518
+        },
+        {
+          "file": "scary.png",
+          "label": "Scary",
+          "count": 515
+        },
+        {
+          "file": "sharp-angle.png",
+          "label": "Sharp Angle",
+          "count": 512
+        },
+        {
+          "file": "sheriff-on-duty.png",
+          "label": "Sheriff on Duty",
+          "count": 510
+        },
+        {
+          "file": "talk-to-much.png",
+          "label": "Talk to Much",
+          "count": 484
+        },
+        {
+          "file": "unshaven.png",
+          "label": "Unshaven",
+          "count": 493
+        },
+        {
+          "file": "wide-open.png",
+          "label": "Wide Open",
+          "count": 521
+        }
+      ]
+    },
+    {
+      "id": "head",
+      "label": "Head",
+      "dir": "layers/head",
+      "options": [
+        {
+          "file": "beanie-thug.png",
+          "label": "Beanie Thug",
+          "count": 670
+        },
+        {
+          "file": "birthday-party.png",
+          "label": "Birthday Party",
+          "count": 664
+        },
+        {
+          "file": "business-man.png",
+          "label": "Business Man",
+          "count": 667
+        },
+        {
+          "file": "classic-hat.png",
+          "label": "Classic Hat",
+          "count": 665
+        },
+        {
+          "file": "dress-to-impress.png",
+          "label": "Dress to Impress",
+          "count": 674
+        },
+        {
+          "file": "greek-gods.png",
+          "label": "Greek Gods",
+          "count": 677
+        },
+        {
+          "file": "paper-crown.png",
+          "label": "Paper Crown",
+          "count": 671
+        },
+        {
+          "file": "punk-never-die.png",
+          "label": "Punk Never Die",
+          "count": 680
+        },
+        {
+          "file": "red-flat-cap.png",
+          "label": "Red Flat Cap",
+          "count": 677
+        },
+        {
+          "file": "senior-detective.png",
+          "label": "Senior Detective",
+          "count": 657
+        },
+        {
+          "file": "slick-back.png",
+          "label": "Slick Back",
+          "count": 629
+        },
+        {
+          "file": "snapback.png",
+          "label": "Snapback",
+          "count": 653
+        },
+        {
+          "file": "tribe-hat.png",
+          "label": "Tribe Hat",
+          "count": 670
+        },
+        {
+          "file": "trickster.png",
+          "label": "Trickster",
+          "count": 694
+        },
+        {
+          "file": "trucker-cap.png",
+          "label": "Trucker Cap",
+          "count": 648
+        }
+      ]
+    },
+    {
+      "id": "left-eye",
+      "label": "Left Eye",
+      "dir": "layers/left-eye",
+      "options": [
+        {
+          "file": "all-seeing-eye.png",
+          "label": "All Seeing Eye",
+          "count": 512
+        },
+        {
+          "file": "asymmetrical.png",
+          "label": "Asymmetrical",
+          "count": 488
+        },
+        {
+          "file": "blank-gaze.png",
+          "label": "Blank Gaze",
+          "count": 492
+        },
+        {
+          "file": "checkered.png",
+          "label": "Checkered",
+          "count": 505
+        },
+        {
+          "file": "childs-play.png",
+          "label": "Childs Play",
+          "count": 504
+        },
+        {
+          "file": "colony.png",
+          "label": "Colony",
+          "count": 473
+        },
+        {
+          "file": "confidence.png",
+          "label": "Confidence",
+          "count": 505
+        },
+        {
+          "file": "danger-sign.png",
+          "label": "Danger Sign",
+          "count": 479
+        },
+        {
+          "file": "dead-man.png",
+          "label": "Dead Man",
+          "count": 510
+        },
+        {
+          "file": "hierarchy.png",
+          "label": "Hierarchy",
+          "count": 500
+        },
+        {
+          "file": "kinda-blue.png",
+          "label": "Kinda Blue",
+          "count": 532
+        },
+        {
+          "file": "normal-square.png",
+          "label": "Normal Square",
+          "count": 493
+        },
+        {
+          "file": "not-see.png",
+          "label": "Not See",
+          "count": 519
+        },
+        {
+          "file": "so-lame.png",
+          "label": "So Lame",
+          "count": 519
+        },
+        {
+          "file": "the-doll-maker.png",
+          "label": "The Doll Maker",
+          "count": 493
+        },
+        {
+          "file": "tilted.png",
+          "label": "Tilted",
+          "count": 488
+        },
+        {
+          "file": "tired-man.png",
+          "label": "Tired Man",
+          "count": 487
+        },
+        {
+          "file": "triangle-bright.png",
+          "label": "Triangle Bright",
+          "count": 475
+        },
+        {
+          "file": "triangle-buddy.png",
+          "label": "Triangle Buddy",
+          "count": 507
+        },
+        {
+          "file": "wrong-option.png",
+          "label": "Wrong Option",
+          "count": 515
+        }
+      ]
+    },
+    {
+      "id": "nose",
+      "label": "Nose",
+      "dir": "layers/nose",
+      "options": [
+        {
+          "file": "amethyst-block.png",
+          "label": "Amethyst Block",
+          "count": 520
+        },
+        {
+          "file": "banana-juice.png",
+          "label": "Banana Juice",
+          "count": 465
+        },
+        {
+          "file": "big-bad-red.png",
+          "label": "Big Bad Red",
+          "count": 540
+        },
+        {
+          "file": "block.png",
+          "label": "Block",
+          "count": 485
+        },
+        {
+          "file": "digital-circus.png",
+          "label": "Digital Circus",
+          "count": 478
+        },
+        {
+          "file": "jagged.png",
+          "label": "Jagged",
+          "count": 479
+        },
+        {
+          "file": "jigsaw.png",
+          "label": "Jigsaw",
+          "count": 541
+        },
+        {
+          "file": "mirrored.png",
+          "label": "Mirrored",
+          "count": 459
+        },
+        {
+          "file": "monkey-business.png",
+          "label": "Monkey Business",
+          "count": 510
+        },
+        {
+          "file": "mountains.png",
+          "label": "Mountains",
+          "count": 548
+        },
+        {
+          "file": "pinocchio.png",
+          "label": "Pinocchio",
+          "count": 510
+        },
+        {
+          "file": "playground.png",
+          "label": "Playground",
+          "count": 469
+        },
+        {
+          "file": "sky-scraper.png",
+          "label": "Sky Scraper",
+          "count": 476
+        },
+        {
+          "file": "small-business.png",
+          "label": "Small Business",
+          "count": 519
+        },
+        {
+          "file": "smell-detector.png",
+          "label": "Smell Detector",
+          "count": 514
+        },
+        {
+          "file": "spike.png",
+          "label": "Spike",
+          "count": 476
+        },
+        {
+          "file": "steep-stairs.png",
+          "label": "Steep Stairs",
+          "count": 514
+        },
+        {
+          "file": "tangerine.png",
+          "label": "Tangerine",
+          "count": 492
+        },
+        {
+          "file": "thunderstorm.png",
+          "label": "Thunderstorm",
+          "count": 497
+        },
+        {
+          "file": "tribe-quest.png",
+          "label": "Tribe Quest",
+          "count": 504
+        }
+      ]
+    },
+    {
+      "id": "right-eye",
+      "label": "Right Eye",
+      "dir": "layers/right-eye",
+      "options": [
+        {
+          "file": "amphibious.png",
+          "label": "Amphibious",
+          "count": 504
+        },
+        {
+          "file": "bruise.png",
+          "label": "Bruise",
+          "count": 477
+        },
+        {
+          "file": "christmas-tree.png",
+          "label": "Christmas Tree",
+          "count": 508
+        },
+        {
+          "file": "color-picker.png",
+          "label": "Color Picker",
+          "count": 464
+        },
+        {
+          "file": "cynical.png",
+          "label": "Cynical",
+          "count": 466
+        },
+        {
+          "file": "emergency-exit.png",
+          "label": "Emergency Exit",
+          "count": 483
+        },
+        {
+          "file": "eyeshadow.png",
+          "label": "Eyeshadow",
+          "count": 501
+        },
+        {
+          "file": "flying-kite.png",
+          "label": "Flying Kite",
+          "count": 502
+        },
+        {
+          "file": "focused.png",
+          "label": "Focused",
+          "count": 493
+        },
+        {
+          "file": "gaze.png",
+          "label": "Gaze",
+          "count": 535
+        },
+        {
+          "file": "mad-man.png",
+          "label": "Mad Man",
+          "count": 513
+        },
+        {
+          "file": "moon-drop.png",
+          "label": "Moon Drop",
+          "count": 465
+        },
+        {
+          "file": "nocturnal.png",
+          "label": "Nocturnal",
+          "count": 468
+        },
+        {
+          "file": "safe-circuit.png",
+          "label": "Safe Circuit",
+          "count": 520
+        },
+        {
+          "file": "scratched-deep.png",
+          "label": "Scratched Deep",
+          "count": 505
+        },
+        {
+          "file": "shiny-gems.png",
+          "label": "Shiny Gems",
+          "count": 505
+        },
+        {
+          "file": "smakeman.png",
+          "label": "Smakeman",
+          "count": 522
+        },
+        {
+          "file": "spare-coin.png",
+          "label": "Spare Coin",
+          "count": 545
+        },
+        {
+          "file": "time-square.png",
+          "label": "Time Square",
+          "count": 500
+        },
+        {
+          "file": "toy-box.png",
+          "label": "Toy Box",
+          "count": 520
+        }
+      ]
+    }
+  ],
+  "honoraries": [
+    {
+      "id": 90,
+      "name": "Mattie 1/1",
+      "image": "img/90.png"
+    },
+    {
+      "id": 163,
+      "name": "Mich 1/1",
+      "image": "img/163.png"
+    },
+    {
+      "id": 294,
+      "name": "H0ld Sats",
+      "image": "img/294.png"
+    },
+    {
+      "id": 600,
+      "name": "Jereziz 1/1",
+      "image": "img/600.png"
+    }
+  ]
+}
