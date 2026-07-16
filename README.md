@@ -61,9 +61,28 @@ collection** that no longer depends on the founder's IPFS pin.
 
 ## Adding a newly burned token
 
-The Vercel endpoints reveal any burned token instantly by proxying IPFS, so a
-new Soul is never blank. This repo is the *durability* layer — mirror each new
-burn here so it no longer depends on Pikkazo's pin:
+**This is now automatic.** The GitHub Action `.github/workflows/mirror.yml` runs
+every 6 hours (and on demand via *workflow_dispatch*): it reads the diamond's
+`Transfer(from=0x0)` logs from a public RPC (`scripts/find_souls.mjs`), and for
+any Soul missing locally it downloads the art and extracts the metadata from
+`meta-all.json`, then commits `mirror: soul #<ids>`. No server, no secrets.
+
+- `scripts/find_souls.mjs` — lists every Soul tokenId on-chain (chunked
+  `eth_getLogs`, RPC fallback publicnode → llamarpc → tenderly; deploy block
+  `25518546` hardcoded). Cross-checks the count against `totalSupply`.
+- `scripts/mirror_missing.sh` — mirrors any Soul not already in `img/`+`meta/`
+  (image via the `cubistsouls.vercel.app/api/img` proxy, then IPFS gateways;
+  metadata from local `meta-all.json`). Idempotent.
+
+Run it by hand any time:
+
+```sh
+bash scripts/mirror_missing.sh
+git add img meta && git commit -m "mirror: soul #<ids>" && git push
+```
+
+`mirror.sh` (fetch a specific id straight from IPFS) remains as a manual
+fallback if the proxy is ever down:
 
 ```sh
 ./mirror.sh 4321 8765      # ids to copy

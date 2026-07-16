@@ -1,0 +1,54 @@
+name: mirror-burned-souls
+
+# Automatically mirror every newly burned Cubist Soul (img + meta) into the repo.
+# Runs on a schedule and on demand. No secrets required — reads a public RPC and
+# extracts metadata from the in-repo meta-all.json.
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # every 6 hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Mirror missing souls
+        run: bash scripts/mirror_missing.sh
+
+      - name: Commit & push new souls
+        run: |
+          set -euo pipefail
+          git config user.name  "cubist-souls-mirror[bot]"
+          git config user.email "actions@github.com"
+
+          # Stage only the mirror outputs, by path (repo hook forbids `git add -A`).
+          git add img/ meta/
+
+          if git diff --cached --quiet; then
+            echo "no new souls to commit"
+            exit 0
+          fi
+
+          # Build a "#a #b" id list from the newly staged files for the message.
+          ids="$(git diff --cached --name-only -- img meta \
+            | sed -E 's#.*/([0-9]+)\.(png|json)#\1#' \
+            | sort -n -u | sed 's/^/#/' | paste -sd' ' -)"
+
+          git commit -m "mirror: soul ${ids}"
+          git push
