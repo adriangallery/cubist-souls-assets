@@ -95,3 +95,59 @@ The contour skeleton (facial square, neck line, ear-with-X) is constant across t
 - **Art Background** is the bottom layer; its skeleton region is always painted over by Base during recomposition, so keeping it is harmless and removing it risks eroding legitimate background edges.
 
 - All higher categories (Clothes, Head, Mouth, Nose, Left/Right Eye) have the skeleton removed so they contribute only their own trait pixels.
+
+## Eyes pass (tools/clean_eyes.py — 2026-07-16, surgical re-extraction of the 40 eye plates)
+
+The Left/Right Eye plates sit under the frequent footprint of Head (the top layer),
+so after occlusion masking few samples stay visible per pixel. With n = 30 the
+cleaning pass's ">= 40% of visible + absolute floor 3" rule both let casual
+agreements through (surviving colour motes) and dropped real content on split votes
+(erosion: bites in All Seeing Eye, holes in Dead Man, ghosts in Asymmetrical).
+Fix = stronger statistics, not more aggressive filtering:
+
+- **n = 100 samples per value** (every eye value has >= 464 tokens), streamed
+  (download -> vote -> delete; cache stays < 40 MB).
+- **Eligibility**: a pixel needs >= 10 visible (unoccluded) samples, else transparent.
+- **Vote**: the exact-colour winner (tol <= 2) keeps the pixel with >= 75% of the
+  visible samples AND >= 6 exact agreers.
+- Component hygiene + skeleton v2 identical to the cleaning pass. Head footprint
+  dilation stayed at 2 px (n = 100 alone fixed the erosion; no need to soften it).
+
+**Why 75% here vs the cleaning pass's 40%** — measured on Right Eye / Spare Coin
+(n = 100), the support (votes/visible) distribution is bimodal: true trait pixels
+sit at ~0.95-1.0 (the trait composites pixel-identically wherever visible) while
+~0.45-0.55 holds two artifact families the 40% bar had let in:
+
+1. a dark-navy blob at the LEFT-pupil position of Right Eye plates — Right Eye's
+   only occluder is Head, so left-eye-region pixels are never masked, and about
+   half the collection's Left Eye values paint the same dark navy there;
+2. phantom eyebrow-arc fragments that are BASE-owned (only ~half the bases draw
+   them; verified 0/5 random Spare Coin tokens carry the arc — an earlier 3/3
+   "confirmation" was selection bias from picking least-Head-occluded tokens).
+
+0.75 splits the modes with margin. Erosion does not return: a true trait pixel
+visible in only 12/100 samples still shows 12/12 = 100% support (the n = 30 erosion
+came from the weak absolute floor, not from the fraction). Known cost: 1-2 px
+outlines blended with varying underlying art (e.g. the thin diamond frame around
+Amphibious) have no exact-colour majority at ANY threshold; v1 kept broken dashes
+of them, this pass drops most of those dashes — cleaner plates, and the recompose
+QA (below) shows fidelity is unaffected.
+
+Verified by eye on the zoomed before/after sheet: All Seeing Eye no longer has
+mordiscos (its big triangular notch is REAL trait transparency — the nose shows
+through it on every source token), Dead Man's holes are filled, Asymmetrical's
+ghosts are gone.
+
+### Results
+
+Eye-only mini-components (<50 px across the 40 eye plates): **206 -> 43** (79% reduction).
+
+Recompose QA (10 tokens, head-top z-order): **mean 97.782%** (>= the 97.5% floor; unchanged fidelity vs the general pass).
+
+Per-token: #136 97.69%, #1 97.698%, #17 97.866%, #42 97.771%, #231 98.093%, #512 97.683%, #1337 97.487%, #2600 98.327%, #5000 97.447%, #8888 97.761%
+
+Worst remaining plates (residual AA slivers / legitimate small pieces the distance guard keeps): Right Eye/Amphibious (17), Right Eye/Spare Coin (5), Right Eye/Eyeshadow (4), Right Eye/Flying Kite (3), Right Eye/Gaze (3), Right Eye/Safe Circuit (3).
+
+Proof: `proof/eyes_pass_diff.png` (worst cases, before | after, zoomed to the
+trait bbox). PENDING (separate task): per-option `bbox` in `manifest.json` +
+builder change to render zoomed thumbnails for the small facial traits.
