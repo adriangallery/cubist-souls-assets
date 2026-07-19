@@ -31,6 +31,11 @@ jobs:
       - name: Mirror missing souls
         run: bash scripts/mirror_missing.sh
 
+      - name: Regenerate cohorts snapshot
+        # Incremental: cohortOf() is immutable once freed, so this only
+        # eth_calls the souls burned since the last snapshot.
+        run: node scripts/gen_cohorts.mjs
+
       - name: Commit & push new souls
         run: |
           set -euo pipefail
@@ -38,7 +43,7 @@ jobs:
           git config user.email "actions@github.com"
 
           # Stage only the mirror outputs, by path (repo hook forbids `git add -A`).
-          git add img/ meta/
+          git add img/ meta/ cohorts/
 
           if git diff --cached --quiet; then
             echo "no new souls to commit"
@@ -49,6 +54,7 @@ jobs:
           ids="$(git diff --cached --name-only -- img meta \
             | sed -E 's#.*/([0-9]+)\.(png|json)#\1#' \
             | sort -n -u | sed 's/^/#/' | paste -sd' ' -)"
+          [ -n "$ids" ] || ids="(cohorts snapshot only)"
 
           git commit -m "mirror: soul ${ids}"
           git push
