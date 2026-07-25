@@ -93,3 +93,12 @@ git add img meta && git commit -m "mirror #4321 #8765" && git push
 
 - images:   `QmVgPQtmUBVFK4YqiTQHSFuF1yWcWF3BKGvpXYwFFHfiBm`
 - metadata: `QmPXUAzyddsQYPUjY2E7WDWedx7vMgdJGyj8a84rzFWmed`
+
+## svg/ — traits vectoriales oficiales (artist source, 24-jul-2026)
+SVGs originales del artista (viewBox 768×768), mapeados 1:1 contra los 145 traits de `manifest.json`
+(slugs idénticos). Extras: `svg/burn-cube/` (4 traits nuevos) y `svg/one-of-one/` (Adrian 1/1 NUEVO
+vectorial + Mattie #90 / H0ld Sats #294 / Jereziz #600 con raster embebido; falta Mich #163).
+⚠️ **Z-order corregido** en `svg/svg-manifest.json`: con planchas completas el orden real es
+AB→Base→Clothes→Head→Mouth→LeftEye→Nose→RightEye (el de `manifest.json` solo vale para las planchas
+PNG truncadas de `layers/`). QA: recomposición vs 2.163 tokens reales, media 88,4% tol24 (resto =
+antialiasing y sombras del rasterizador original); proof/svg_qa_5637.png.

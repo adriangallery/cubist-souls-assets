@@ -1,0 +1,849 @@
+{
+ "collection": "Cubist Souls — official vector traits (artist source, jul-2026)",
+ "note": "SVGs originales del artista, viewBox 0 0 768 768. Z-ORDER CORREGIDO respecto a manifest.json: con planchas COMPLETAS (no truncadas) el orden real del generador es AB<Base<Clothes<Head<Mouth<LeftEye<Nose<RightEye (validado contra 2163 tokens reales, QA media 88.4% tol24, resto = antialiasing).",
+ "canvas": 768,
+ "zOrder": [
+  "art-background",
+  "base",
+  "clothes",
+  "head",
+  "mouth",
+  "left-eye",
+  "nose",
+  "right-eye"
+ ],
+ "categories": [
+  {
+   "id": "art-background",
+   "label": "Art Background",
+   "dir": "svg/art-background",
+   "options": [
+    {
+     "file": "color-block.svg",
+     "label": "Color Block",
+     "count": 669
+    },
+    {
+     "file": "emerald-tiles.svg",
+     "label": "Emerald Tiles",
+     "count": 658
+    },
+    {
+     "file": "leaf-tiles.svg",
+     "label": "Leaf Tiles",
+     "count": 645
+    },
+    {
+     "file": "snow-tiles.svg",
+     "label": "Snow Tiles",
+     "count": 720
+    },
+    {
+     "file": "star-blue.svg",
+     "label": "Star Blue",
+     "count": 706
+    },
+    {
+     "file": "star-brown.svg",
+     "label": "Star Brown",
+     "count": 688
+    },
+    {
+     "file": "star-emerald.svg",
+     "label": "Star Emerald",
+     "count": 679
+    },
+    {
+     "file": "star-green.svg",
+     "label": "Star Green",
+     "count": 664
+    },
+    {
+     "file": "star-neon.svg",
+     "label": "Star Neon",
+     "count": 639
+    },
+    {
+     "file": "star-orange.svg",
+     "label": "Star Orange",
+     "count": 653
+    },
+    {
+     "file": "star-pink.svg",
+     "label": "Star Pink",
+     "count": 673
+    },
+    {
+     "file": "star-purple.svg",
+     "label": "Star Purple",
+     "count": 625
+    },
+    {
+     "file": "star-red.svg",
+     "label": "Star Red",
+     "count": 682
+    },
+    {
+     "file": "star-snow.svg",
+     "label": "Star Snow",
+     "count": 627
+    },
+    {
+     "file": "star-white.svg",
+     "label": "Star White",
+     "count": 668
+    }
+   ]
+  },
+  {
+   "id": "base",
+   "label": "Base",
+   "dir": "svg/base",
+   "options": [
+    {
+     "file": "ancient-tribe.svg",
+     "label": "Ancient Tribe",
+     "count": 456
+    },
+    {
+     "file": "as-a-human.svg",
+     "label": "As a Human",
+     "count": 540
+    },
+    {
+     "file": "childs-play.svg",
+     "label": "Childs Play",
+     "count": 484
+    },
+    {
+     "file": "dark-night.svg",
+     "label": "Dark Night",
+     "count": 499
+    },
+    {
+     "file": "emerald-shine.svg",
+     "label": "Emerald Shine",
+     "count": 503
+    },
+    {
+     "file": "geometry-dash.svg",
+     "label": "Geometry Dash",
+     "count": 523
+    },
+    {
+     "file": "glow-stone.svg",
+     "label": "Glow Stone",
+     "count": 437
+    },
+    {
+     "file": "grassland.svg",
+     "label": "Grassland",
+     "count": 513
+    },
+    {
+     "file": "heatwave.svg",
+     "label": "Heatwave",
+     "count": 501
+    },
+    {
+     "file": "impression-sunrise.svg",
+     "label": "Impression Sunrise",
+     "count": 528
+    },
+    {
+     "file": "ocean-eyes.svg",
+     "label": "Ocean Eyes",
+     "count": 520
+    },
+    {
+     "file": "playground.svg",
+     "label": "Playground",
+     "count": 509
+    },
+    {
+     "file": "snowy-weather.svg",
+     "label": "Snowy Weather",
+     "count": 497
+    },
+    {
+     "file": "soft-cloud.svg",
+     "label": "Soft Cloud",
+     "count": 526
+    },
+    {
+     "file": "star-gazer.svg",
+     "label": "Star Gazer",
+     "count": 505
+    },
+    {
+     "file": "star-struck.svg",
+     "label": "Star Struck",
+     "count": 486
+    },
+    {
+     "file": "sun-burn.svg",
+     "label": "Sun Burn",
+     "count": 493
+    },
+    {
+     "file": "sunset-point.svg",
+     "label": "Sunset Point",
+     "count": 482
+    },
+    {
+     "file": "the-scream.svg",
+     "label": "The Scream",
+     "count": 475
+    },
+    {
+     "file": "time-leap.svg",
+     "label": "Time Leap",
+     "count": 519
+    }
+   ]
+  },
+  {
+   "id": "clothes",
+   "label": "Clothes",
+   "dir": "svg/clothes",
+   "options": [
+    {
+     "file": "black-hoodie.svg",
+     "label": "Black Hoodie",
+     "count": 672
+    },
+    {
+     "file": "detective-noir.svg",
+     "label": "Detective Noir",
+     "count": 683
+    },
+    {
+     "file": "emerald-butler.svg",
+     "label": "Emerald Butler",
+     "count": 657
+    },
+    {
+     "file": "fiery-suit.svg",
+     "label": "Fiery Suit",
+     "count": 681
+    },
+    {
+     "file": "greek-gods.svg",
+     "label": "Greek Gods",
+     "count": 663
+    },
+    {
+     "file": "high-noble.svg",
+     "label": "High Noble",
+     "count": 678
+    },
+    {
+     "file": "painter-work.svg",
+     "label": "Painter Work",
+     "count": 662
+    },
+    {
+     "file": "polo-spike.svg",
+     "label": "Polo Spike",
+     "count": 602
+    },
+    {
+     "file": "red-scarf.svg",
+     "label": "Red Scarf",
+     "count": 655
+    },
+    {
+     "file": "shabby-suit.svg",
+     "label": "Shabby Suit",
+     "count": 680
+    },
+    {
+     "file": "shabby-vest.svg",
+     "label": "Shabby Vest",
+     "count": 671
+    },
+    {
+     "file": "spider-vest.svg",
+     "label": "Spider Vest",
+     "count": 681
+    },
+    {
+     "file": "tartan-flanel.svg",
+     "label": "Tartan Flanel",
+     "count": 672
+    },
+    {
+     "file": "tribe-vest.svg",
+     "label": "Tribe Vest",
+     "count": 685
+    },
+    {
+     "file": "white-hoodie.svg",
+     "label": "White Hoodie",
+     "count": 654
+    }
+   ]
+  },
+  {
+   "id": "mouth",
+   "label": "Mouth",
+   "dir": "svg/mouth",
+   "options": [
+    {
+     "file": "amphibious.svg",
+     "label": "Amphibious",
+     "count": 501
+    },
+    {
+     "file": "artistic.svg",
+     "label": "Artistic",
+     "count": 436
+    },
+    {
+     "file": "checkered.svg",
+     "label": "Checkered",
+     "count": 484
+    },
+    {
+     "file": "clown-surprise.svg",
+     "label": "Clown Surprise",
+     "count": 479
+    },
+    {
+     "file": "coward.svg",
+     "label": "Coward",
+     "count": 477
+    },
+    {
+     "file": "diva.svg",
+     "label": "Diva",
+     "count": 513
+    },
+    {
+     "file": "dress-to-kill.svg",
+     "label": "Dress to Kill",
+     "count": 427
+    },
+    {
+     "file": "gentleman.svg",
+     "label": "Gentleman",
+     "count": 514
+    },
+    {
+     "file": "lipstain.svg",
+     "label": "Lipstain",
+     "count": 531
+    },
+    {
+     "file": "need-water.svg",
+     "label": "Need Water",
+     "count": 517
+    },
+    {
+     "file": "nervous.svg",
+     "label": "Nervous",
+     "count": 510
+    },
+    {
+     "file": "not-speak.svg",
+     "label": "Not Speak",
+     "count": 530
+    },
+    {
+     "file": "rainbow-grill.svg",
+     "label": "Rainbow Grill",
+     "count": 524
+    },
+    {
+     "file": "scaredy.svg",
+     "label": "Scaredy",
+     "count": 518
+    },
+    {
+     "file": "scary.svg",
+     "label": "Scary",
+     "count": 515
+    },
+    {
+     "file": "sharp-angle.svg",
+     "label": "Sharp Angle",
+     "count": 512
+    },
+    {
+     "file": "sheriff-on-duty.svg",
+     "label": "Sheriff on Duty",
+     "count": 510
+    },
+    {
+     "file": "talk-to-much.svg",
+     "label": "Talk to Much",
+     "count": 484
+    },
+    {
+     "file": "unshaven.svg",
+     "label": "Unshaven",
+     "count": 493
+    },
+    {
+     "file": "wide-open.svg",
+     "label": "Wide Open",
+     "count": 521
+    }
+   ]
+  },
+  {
+   "id": "head",
+   "label": "Head",
+   "dir": "svg/head",
+   "options": [
+    {
+     "file": "beanie-thug.svg",
+     "label": "Beanie Thug",
+     "count": 670
+    },
+    {
+     "file": "birthday-party.svg",
+     "label": "Birthday Party",
+     "count": 664
+    },
+    {
+     "file": "business-man.svg",
+     "label": "Business Man",
+     "count": 667
+    },
+    {
+     "file": "classic-hat.svg",
+     "label": "Classic Hat",
+     "count": 665
+    },
+    {
+     "file": "dress-to-impress.svg",
+     "label": "Dress to Impress",
+     "count": 674
+    },
+    {
+     "file": "greek-gods.svg",
+     "label": "Greek Gods",
+     "count": 677
+    },
+    {
+     "file": "paper-crown.svg",
+     "label": "Paper Crown",
+     "count": 671
+    },
+    {
+     "file": "punk-never-die.svg",
+     "label": "Punk Never Die",
+     "count": 680
+    },
+    {
+     "file": "red-flat-cap.svg",
+     "label": "Red Flat Cap",
+     "count": 677
+    },
+    {
+     "file": "senior-detective.svg",
+     "label": "Senior Detective",
+     "count": 657
+    },
+    {
+     "file": "slick-back.svg",
+     "label": "Slick Back",
+     "count": 629
+    },
+    {
+     "file": "snapback.svg",
+     "label": "Snapback",
+     "count": 653
+    },
+    {
+     "file": "tribe-hat.svg",
+     "label": "Tribe Hat",
+     "count": 670
+    },
+    {
+     "file": "trickster.svg",
+     "label": "Trickster",
+     "count": 694
+    },
+    {
+     "file": "trucker-cap.svg",
+     "label": "Trucker Cap",
+     "count": 648
+    }
+   ]
+  },
+  {
+   "id": "left-eye",
+   "label": "Left Eye",
+   "dir": "svg/left-eye",
+   "options": [
+    {
+     "file": "all-seeing-eye.svg",
+     "label": "All Seeing Eye",
+     "count": 512
+    },
+    {
+     "file": "asymmetrical.svg",
+     "label": "Asymmetrical",
+     "count": 488
+    },
+    {
+     "file": "blank-gaze.svg",
+     "label": "Blank Gaze",
+     "count": 492
+    },
+    {
+     "file": "checkered.svg",
+     "label": "Checkered",
+     "count": 505
+    },
+    {
+     "file": "childs-play.svg",
+     "label": "Childs Play",
+     "count": 504
+    },
+    {
+     "file": "colony.svg",
+     "label": "Colony",
+     "count": 473
+    },
+    {
+     "file": "confidence.svg",
+     "label": "Confidence",
+     "count": 505
+    },
+    {
+     "file": "danger-sign.svg",
+     "label": "Danger Sign",
+     "count": 479
+    },
+    {
+     "file": "dead-man.svg",
+     "label": "Dead Man",
+     "count": 510
+    },
+    {
+     "file": "hierarchy.svg",
+     "label": "Hierarchy",
+     "count": 500
+    },
+    {
+     "file": "kinda-blue.svg",
+     "label": "Kinda Blue",
+     "count": 532
+    },
+    {
+     "file": "normal-square.svg",
+     "label": "Normal Square",
+     "count": 493
+    },
+    {
+     "file": "not-see.svg",
+     "label": "Not See",
+     "count": 519
+    },
+    {
+     "file": "so-lame.svg",
+     "label": "So Lame",
+     "count": 519
+    },
+    {
+     "file": "the-doll-maker.svg",
+     "label": "The Doll Maker",
+     "count": 493
+    },
+    {
+     "file": "tilted.svg",
+     "label": "Tilted",
+     "count": 488
+    },
+    {
+     "file": "tired-man.svg",
+     "label": "Tired Man",
+     "count": 487
+    },
+    {
+     "file": "triangle-bright.svg",
+     "label": "Triangle Bright",
+     "count": 475
+    },
+    {
+     "file": "triangle-buddy.svg",
+     "label": "Triangle Buddy",
+     "count": 507
+    },
+    {
+     "file": "wrong-option.svg",
+     "label": "Wrong Option",
+     "count": 515
+    }
+   ]
+  },
+  {
+   "id": "nose",
+   "label": "Nose",
+   "dir": "svg/nose",
+   "options": [
+    {
+     "file": "amethyst-block.svg",
+     "label": "Amethyst Block",
+     "count": 520
+    },
+    {
+     "file": "banana-juice.svg",
+     "label": "Banana Juice",
+     "count": 465
+    },
+    {
+     "file": "big-bad-red.svg",
+     "label": "Big Bad Red",
+     "count": 540
+    },
+    {
+     "file": "block.svg",
+     "label": "Block",
+     "count": 485
+    },
+    {
+     "file": "digital-circus.svg",
+     "label": "Digital Circus",
+     "count": 478
+    },
+    {
+     "file": "jagged.svg",
+     "label": "Jagged",
+     "count": 479
+    },
+    {
+     "file": "jigsaw.svg",
+     "label": "Jigsaw",
+     "count": 541
+    },
+    {
+     "file": "mirrored.svg",
+     "label": "Mirrored",
+     "count": 459
+    },
+    {
+     "file": "monkey-business.svg",
+     "label": "Monkey Business",
+     "count": 510
+    },
+    {
+     "file": "mountains.svg",
+     "label": "Mountains",
+     "count": 548
+    },
+    {
+     "file": "pinocchio.svg",
+     "label": "Pinocchio",
+     "count": 510
+    },
+    {
+     "file": "playground.svg",
+     "label": "Playground",
+     "count": 469
+    },
+    {
+     "file": "sky-scraper.svg",
+     "label": "Sky Scraper",
+     "count": 476
+    },
+    {
+     "file": "small-business.svg",
+     "label": "Small Business",
+     "count": 519
+    },
+    {
+     "file": "smell-detector.svg",
+     "label": "Smell Detector",
+     "count": 514
+    },
+    {
+     "file": "spike.svg",
+     "label": "Spike",
+     "count": 476
+    },
+    {
+     "file": "steep-stairs.svg",
+     "label": "Steep Stairs",
+     "count": 514
+    },
+    {
+     "file": "tangerine.svg",
+     "label": "Tangerine",
+     "count": 492
+    },
+    {
+     "file": "thunderstorm.svg",
+     "label": "Thunderstorm",
+     "count": 497
+    },
+    {
+     "file": "tribe-quest.svg",
+     "label": "Tribe Quest",
+     "count": 504
+    }
+   ]
+  },
+  {
+   "id": "right-eye",
+   "label": "Right Eye",
+   "dir": "svg/right-eye",
+   "options": [
+    {
+     "file": "amphibious.svg",
+     "label": "Amphibious",
+     "count": 504
+    },
+    {
+     "file": "bruise.svg",
+     "label": "Bruise",
+     "count": 477
+    },
+    {
+     "file": "christmas-tree.svg",
+     "label": "Christmas Tree",
+     "count": 508
+    },
+    {
+     "file": "color-picker.svg",
+     "label": "Color Picker",
+     "count": 464
+    },
+    {
+     "file": "cynical.svg",
+     "label": "Cynical",
+     "count": 466
+    },
+    {
+     "file": "emergency-exit.svg",
+     "label": "Emergency Exit",
+     "count": 483
+    },
+    {
+     "file": "eyeshadow.svg",
+     "label": "Eyeshadow",
+     "count": 501
+    },
+    {
+     "file": "flying-kite.svg",
+     "label": "Flying Kite",
+     "count": 502
+    },
+    {
+     "file": "focused.svg",
+     "label": "Focused",
+     "count": 493
+    },
+    {
+     "file": "gaze.svg",
+     "label": "Gaze",
+     "count": 535
+    },
+    {
+     "file": "mad-man.svg",
+     "label": "Mad Man",
+     "count": 513
+    },
+    {
+     "file": "moon-drop.svg",
+     "label": "Moon Drop",
+     "count": 465
+    },
+    {
+     "file": "nocturnal.svg",
+     "label": "Nocturnal",
+     "count": 468
+    },
+    {
+     "file": "safe-circuit.svg",
+     "label": "Safe Circuit",
+     "count": 520
+    },
+    {
+     "file": "scratched-deep.svg",
+     "label": "Scratched Deep",
+     "count": 505
+    },
+    {
+     "file": "shiny-gems.svg",
+     "label": "Shiny Gems",
+     "count": 505
+    },
+    {
+     "file": "smakeman.svg",
+     "label": "Smakeman",
+     "count": 522
+    },
+    {
+     "file": "spare-coin.svg",
+     "label": "Spare Coin",
+     "count": 545
+    },
+    {
+     "file": "time-square.svg",
+     "label": "Time Square",
+     "count": 500
+    },
+    {
+     "file": "toy-box.svg",
+     "label": "Toy Box",
+     "count": 520
+    }
+   ]
+  }
+ ],
+ "burnCube": [
+  {
+   "file": "burning-soul.svg",
+   "label": "Burning Soul"
+  },
+  {
+   "file": "flame-crown.svg",
+   "label": "Flame Crown"
+  },
+  {
+   "file": "orange.svg",
+   "label": "Orange"
+  },
+  {
+   "file": "phoenix.svg",
+   "label": "Phoenix"
+  }
+ ],
+ "oneOfOnes": [
+  {
+   "file": "adrian.svg",
+   "label": "Adrian 1/1 (NUEVO — no existe en la colección OG; vector puro)",
+   "tokenId": null,
+   "vector": true,
+   "note": null
+  },
+  {
+   "file": "mattie-90.svg",
+   "label": "Mattie 1/1",
+   "tokenId": 90,
+   "vector": false,
+   "note": "contiene raster embebido (arte original raster)"
+  },
+  {
+   "file": "hold-sats-294.svg",
+   "label": "H0ld Sats",
+   "tokenId": 294,
+   "vector": false,
+   "note": "contiene raster embebido (arte original raster)"
+  },
+  {
+   "file": "jereziz-600.svg",
+   "label": "Jereziz 1/1",
+   "tokenId": 600,
+   "vector": false,
+   "note": "contiene raster embebido (arte original raster)"
+  }
+ ],
+ "missing": [
+  "#163 Mich 1/1 NO venía en el zip del artista"
+ ]
+}
