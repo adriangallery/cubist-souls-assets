@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "note": "Hot params for the Cubist Souls pyramidal govern page (/govern). EDIT + push and the web reflects it in seconds — NO redeploy (fetched client-side, cache-busted). Bump `version` on every change so the page footer shows which params it is running.",
-  "cohortPts": { "og": 4, "eraI": 2, "eraII": 1 },
-  "reaperCrown": 3,
+  "version": 2,
+  "note": "Hot params for the Cubist Souls pyramidal govern page (/govern). EDIT + push and the web reflects it in seconds — NO redeploy (fetched client-side, cache-busted). Bump `version` on every change so the page footer shows which params it is running. [v2: anti-redeploy demonstration — crown 3->5, eraII 1->2, quorum 400->333]",
+  "cohortPts": { "og": 4, "eraI": 2, "eraII": 2 },
+  "reaperCrown": 5,
   "seniorityTiers": [1000, 5000, 15000, 40000, 100000],
-  "quorumSouls": 400,
+  "quorumSouls": 333,
   "secondsRequired": 2,
   "salonCadence": "monthly",
   "brakeHours": 72
